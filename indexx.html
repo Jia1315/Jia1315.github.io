@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">                   <!--從GoogleFont複製想要的文字樣式網址-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Open+Sans:ital,wght@1,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a66330b80d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css"> <!--加入自己的css-->
+    <title>JIA的宜蘭民宿推薦</title>
+</head>
+<body>
+    <!--2.Nav，Bootstrap有現成的nav可以使用，在Navbar-->
+    <header>
+        <div class='container'>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">選單</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href='indexx.html'>主頁</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">最新消息</a>
+                      </li>
+                      <li class="nav-item dropdown"> <!--dropdown可以顯示多項的選擇-->
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          區域 <!--"#"是假連結-->
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-map-location-dot"></i> 礁溪</span></a></li>
+                          <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-map-location-dot"></i> 羅東</span></a></li>
+                          <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-map-location-dot"></i> 頭城</span></a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">還有花東地區民宿推薦，敬請期待!</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item"></li>
+                        <a class="nav-link active" href="#">聯絡我們</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#">VUE作品</a> <!--nav-link若設定為disabled代表把link關掉了，-->
+                      </li>                                       <!--，要打開的畫改為active即可:"nav-link active"-->                      
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+    <!--1.第一段上方的標題文字-->
+    <section id="intro">            <!--section=方塊-->
+        <div class="container">     <!--有section通常就會有container(告訴它有容器)-->       
+            <div class="col-md-12">     <!--"col-md-12"是Bootstrap的架構-->
+                <h1 class="display-4">宜蘭激推民宿飯店</h1>   <!--"display-4"類似h1標題-->
+                <p class="lead"><i class="fa-regular fa-face-smile-wink" style="color: #f40bec;"></i>~跟著Sharon去住宿~<i class="fa-regular fa-face-smile-wink" style="color: #f40bec;"></i></p>
+            </div>
+        </div>
+    </section>
+    <!--3.第二段簡介-->
+    <section id="second">
+        <div class="container">
+            <div class='row'>
+                <div class='col-md-10 offset-md-2 text-center'>
+                    <h3><i class="fa-solid fa-star" style="color: #d97373;"></i> 宜蘭最棒的住宿地點攏底家 <i class="fa-solid fa-star" style="color: #d97373;"></i></h3>
+                    <div class='row'>
+                        <div class='col-md-4 text-center'>
+                            <img src='pictures/images.png'>
+                            <h5>小編Sharon</h5>
+                        </div>
+                        <div class='col-md-8 text-left'>
+                            <p class='lead'>宜蘭好山好水，妳/你來過了嗎 ?</p>
+                            <p>現代人生活壓力大，偶爾還是要放鬆一下吧 !</p>
+                            <p>Sharon在此推薦我心目中最棒的九家宜蘭民宿提供您選擇 !</p>
+                            <p>無論是家人、朋友、情侶、同事、不分男女老少，都很適合唷 !</p>
+                            <p>不要再猶豫了!趕緊繼續看下去 !</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--4.第三段-->
+    <section id='latest'>
+      <div class="container">
+        <div class='row'>
+          <div class='col-md-12 text-center'> <!--全橫幅md12-->
+            <h1> </h1>
+            <div class='row'>
+              <div class='col-md-4 text-left'> <!--一個品項md4，故總共可放3個品項-->
+                <div class='outer'>
+                  <a href='#'>
+                  <div class='upper'>
+                    <img src='pictures/donglu.png'>
+                    <div class='innertext'>
+                  </a>
+                      <span><i class="fa-solid fa-house-chimney-window fa-flip" style="color: #5a8add;"></i> 東旅湯宿溫泉飯店</span>
+                  </div>
+                      <h8><i class="fa-solid fa-comments-dollar fa-shake" style="color: #f5c747;"></i> 參考價格：雙人房淡季 NT$2,460元</h8>                   
+                  </div>
+                  <div class='lower'>
+                    <h8><i class="fa-solid fa-thumbs-up fa-fade" style="color: #e54384;"></i> 馬上預訂:</h8>
+                    <a href='#'>
+                      <span>agoda</span>
+                    </a>
+                    <h8>、</h8>
+                    <a href='#'>
+                      <span>Booking</span>
+                    </a>
+                  </div>
+              <span><i class="fa-solid fa-location-dot fa-bounce" style="color: #c15dd5;"></i> 宜蘭縣礁溪鄉德陽路28號</span><br> <!--i class圖片-->
+              <span><i class="fa-solid fa-car fa-beat" style="color: #080808;"></i> 免費停車場</span>
+                </div>
+              </div>
+              <div class='col-md-4 text-left'> <!--一個品項md4，故總共可放3個品項-->
+                <div class='outer'>
+                  <a href='#'>
+                  <div class='upper'>
+                    <img src='pictures/jeslu.png'>
+                    <div class='innertext'>
+                  </a>
+                      <span><i class="fa-solid fa-house-chimney-window fa-flip" style="color: #5a8add;"></i> 捷絲旅宜蘭礁溪館</span>
+                  </div>
+                      <h8><i class="fa-solid fa-comments-dollar fa-shake" style="color: #f5c747;"></i> 參考價格：雙人房淡季 NT$3,290元</h8>                   
+                  </div>
+                  <div class='lower'>
+                    <h8><i class="fa-solid fa-thumbs-up fa-fade" style="color: #e54384;"></i> 馬上預訂:</h8>
+                    <a href='#'>
+                      <span>agoda</span>
+                    </a>
+                    <h8>、</h8>
+                    <a href='#'>
+                      <span>Booking</span>
+                    </a>
+                  </div>
+              <span><i class="fa-solid fa-location-dot fa-bounce" style="color: #c15dd5;"></i> 宜蘭縣礁溪鄉德陽路24巷8號</span><br> <!--i class圖片-->
+              <span><i class="fa-solid fa-car fa-beat" style="color: #080808;"></i> 免費停車場</span>
+                </div>
+              </div>
+              <div class='col-md-4 text-left'> <!--一個品項md4，故總共可放3個品項-->
+                <div class='outer'>
+                  <a href='#'>
+                  <div class='upper'>
+                    <img src='pictures/oneday.png'>
+                    <div class='innertext'>
+                  </a>
+                      <span><i class="fa-solid fa-house-chimney-window fa-flip" style="color: #5a8add;"></i> one.day 旅行</span>
+                  </div>
+                      <h8><i class="fa-solid fa-comments-dollar fa-shake" style="color: #f5c747;"></i> 參考價格：雙人房淡季 NT$3,080元</h8>                   
+                  </div>
+                  <div class='lower'>
+                    <h8><i class="fa-solid fa-thumbs-up fa-fade" style="color: #e54384;"></i> 馬上預訂:</h8>
+                    <a href='#'>
+                      <span>agoda</span>
+                    </a>
+                    <h8>、</h8>
+                    <a href='#'>
+                      <span>Booking</span>
+                    </a>
+                  </div>
+              <span><i class="fa-solid fa-location-dot fa-bounce" style="color: #c15dd5;"></i> 宜蘭縣礁溪鄉白雲村份尾一路17巷10號</span><br> <!--i class圖片-->
+              <span><i class="fa-solid fa-car fa-beat" style="color: #080808;"></i> 免費停車場</span>
+                </div>
+              </div>
+            </div>            
+          </div>
+        </div>
+        <!--第二排-->
+        <div class='row'>
+          <div class='col-md-12 text-center'> <!--全橫幅md12-->
+            <h1> </h1>
+            <div class='row'>
+              <div class='col-md-4 text-left'> <!--一個品項md4，故總共可放3個品項-->
+                <div class='outer'>
+                  <a href='#'>
+                  <div class='upper'>
+                    <img src='pictures/chun.png'>
+                    <div class='innertext'>
+                  </a>
+                      <span><i class="fa-solid fa-house-chimney-window fa-flip" style="color: #5a8add;"></i> 村却國際溫泉酒店</span>
+                  </div>
+                      <h8><i class="fa-solid fa-comments-dollar fa-shake" style="color: #f5c747;"></i> 參考價格：雙人房淡季 NT$5,270元</h8>                   
+                  </div>
+                  <div class='lower'>
+                    <h8><i class="fa-solid fa-thumbs-up fa-fade" style="color: #e54384;"></i> 馬上預訂:</h8>
+                    <a href='#'>
+                      <span>agoda</span>
+                    </a>
+                    <h8>、</h8>
+                    <a href='#'>
+                      <span>Booking</span>
+                    </a>
+                  </div>
+              <span><i class="fa-solid fa-location-dot fa-bounce" style="color: #c15dd5;"></i> 宜蘭縣羅東鎮站東路190號</span><br> <!--i class圖片-->
+              <span><i class="fa-solid fa-car fa-beat" style="color: #080808;"></i> 免費停車場</span>
+                </div>
+              </div>
+              <div class='col-md-4 text-left'> <!--一個品項md4，故總共可放3個品項-->
+                <div class='outer'>
+                  <a href='#'>
+                  <div class='upper'>
+                    <img src='pictures/ann.png'>
+                    <div class='innertext'>
+                  </a>
+                      <span><i class="fa-solid fa-house-chimney-window fa-flip" style="color: #5a8add;"></i> 川岸空中villa</span>
+                  </div>
+                      <h8><i class="fa-solid fa-comments-dollar fa-shake" style="color: #f5c747;"></i> 參考價格：雙人房淡季 NT$1,810元</h8>                   
+                  </div>
+                  <div class='lower'>
+                    <h8><i class="fa-solid fa-thumbs-up fa-fade" style="color: #e54384;"></i> 馬上預訂:</h8>
+                    <a href='#'>
+                      <span>agoda</span>
+                    </a>
+                    <h8>、</h8>
+                    <a href='#'>
+                      <span>Booking</span>
+                    </a>
+                  </div>
+              <span><i class="fa-solid fa-location-dot fa-bounce" style="color: #c15dd5;"></i> 宜蘭縣羅東鎮新群南路347巷82弄8號</span><br> <!--i class圖片-->
+              <span><i class="fa-solid fa-car fa-beat" style="color: #080808;"></i> 免費停車場</span>
+                </div>
+              </div>
+              <div class='col-md-4 text-left'> <!--一個品項md4，故總共可放3個品項-->
+                <div class='outer'>
+                  <a href='#'>
+                  <div class='upper'>
+                    <img src='pictures/hive.png'>
+                    <div class='innertext'>
+                  </a>
+                      <span><i class="fa-solid fa-house-chimney-window fa-flip" style="color: #5a8add;"></i> HIVE HOTEL</span>
+                  </div>
+                      <h8><i class="fa-solid fa-comments-dollar fa-shake" style="color: #f5c747;"></i> 參考價格：雙人房淡季 NT$2,000元</h8>                   
+                  </div>
+                  <div class='lower'>
+                    <h8><i class="fa-solid fa-thumbs-up fa-fade" style="color: #e54384;"></i> 馬上預訂:</h8>
+                    <a href='#'>
+                      <span>agoda</span>
+                    </a>
+                    <h8>、</h8>
+                    <a href='#'>
+                      <span>Booking</span>
+                    </a>
+                  </div>
+              <span><i class="fa-solid fa-location-dot fa-bounce" style="color: #c15dd5;"></i> 宜蘭縣羅東鎮公正路38號</span><br> <!--i class圖片-->
+              <span><i class="fa-solid fa-car fa-beat" style="color: #080808;"></i> 免費停車場</span>
+                </div>
+              </div>
+              <!--第三排-->
+        <div class='row'>
+          <div class='col-md-12 text-center'> <!--全橫幅md12-->
+            <h1> </h1>
+            <div class='row'>
+              <div class='col-md-4 text-left'> <!--一個品項md4，故總共可放3個品項-->
+                <div class='outer'>
+                  <a href='#'>
+                  <div class='upper'>
+                    <img src='pictures/moon.jpg'>
+                    <div class='innertext'>
+                  </a>
+                      <span><i class="fa-solid fa-house-chimney-window fa-flip" style="color: #5a8add;"></i> 頭城Moon</span>
+                  </div>
+                      <h8><i class="fa-solid fa-comments-dollar fa-shake" style="color: #f5c747;"></i> 參考價格：雙人房淡季 NT$3,088元</h8>                   
+                  </div>
+                  <div class='lower'>
+                    <h8><i class="fa-solid fa-thumbs-up fa-fade" style="color: #e54384;"></i> 馬上預訂:</h8>
+                    <a href='#'>
+                      <span>airbnb</span>
+                    </a>
+                  </div>
+              <span><i class="fa-solid fa-location-dot fa-bounce" style="color: #c15dd5;"></i> 宜蘭縣頭城鎮大坑路198號</span><br> <!--i class圖片-->
+              <span><i class="fa-solid fa-car fa-beat" style="color: #080808;"></i> 免費停車場</span>
+                </div>
+              </div>
+              <div class='col-md-4 text-left'> <!--一個品項md4，故總共可放3個品項-->
+                <div class='outer'>
+                  <a href='#'>
+                  <div class='upper'>
+                    <img src='pictures/Noir.png'>
+                    <div class='innertext'>
+                  </a>
+                      <span><i class="fa-solid fa-house-chimney-window fa-flip" style="color: #5a8add;"></i> Noir 黑舍</span>
+                  </div>
+                      <h8><i class="fa-solid fa-comments-dollar fa-shake" style="color: #f5c747;"></i> 參考價格：雙人房淡季 NT$3,600元</h8>                   
+                  </div>
+                  <div class='lower'>
+                    <h8><i class="fa-solid fa-thumbs-up fa-fade" style="color: #e54384;"></i> 馬上預訂:</h8>
+                    <a href='#'>
+                      <span>agoda</span>
+                    </a>
+                    <h8>、</h8>
+                    <a href='#'>
+                      <span>Booking</span>
+                    </a>
+                  </div>
+              <span><i class="fa-solid fa-location-dot fa-bounce" style="color: #c15dd5;"></i> 宜蘭縣頭城朝陽路100號</span><br> <!--i class圖片-->
+              <span><i class="fa-solid fa-car fa-beat" style="color: #080808;"></i> 免費停車場</span>
+                </div>
+              </div>
+              <div class='col-md-4 text-left'> <!--一個品項md4，故總共可放3個品項-->
+                <div class='outer'>
+                  <a href='#'>
+                  <div class='upper'>
+                    <img src='pictures/play.png'>
+                    <div class='innertext'>
+                  </a>
+                      <span><i class="fa-solid fa-house-chimney-window fa-flip" style="color: #5a8add;"></i> Play Hotel</span>
+                  </div>
+                      <h8><i class="fa-solid fa-comments-dollar fa-shake" style="color: #f5c747;"></i> 參考價格：雙人房淡季 NT$5,900元</h8>                   
+                  </div>
+                  <div class='lower'>
+                    <h8><i class="fa-solid fa-thumbs-up fa-fade" style="color: #e54384;"></i> 馬上預訂:</h8>
+                    <a href='#'>
+                      <span>agoda</span>
+                    </a>
+                    <h8>、</h8>
+                    <a href='#'>
+                      <span>Booking</span>
+                    </a>
+                  </div>
+              <span><i class="fa-solid fa-location-dot fa-bounce" style="color: #c15dd5;"></i> 宜蘭縣頭城鎮濱海路二段106號</span><br> <!--i class圖片-->
+              <span><i class="fa-solid fa-car fa-beat" style="color: #080808;"></i> 免費停車場</span>
+                </div>
+              </div>
+      </div>
+    </section>
+<!--第四段 email link-->
+<section id='latest'>
+  <div class="container">
+    <div class='row'>
+      <div class='col-md-12 text-center'>
+        <h1> </h1>
+</div></div></div>
+</section>
+<section id='latest'>
+  <div class="container">
+    <div class='row'>
+      <div class='col-md-12 text-center'> 
+        <h1> </h1>
+</div></div></div>
+</section> <!--拉開距離-->
+
+<section id='email'>
+  <div class="container">
+    <div class='row'>
+    <div class='col-md-8 offset-md-2 text-center'>
+      <h3>不想錯過Sharon的民宿推薦嗎 ? ?</h3>
+    </div>
+    </div>
+    <div class='row'>
+    <div class='col-md-8 offset-md-2 text-left'>  
+    <p>填寫E-mail，訂閱我，接收第一手消息 !</p>             
+      <div class="input-group input-group-lg">
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="你的電郵">
+      <a class="btn btn-primary btn-sm" href="#" role="button">提交</a>
+    </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section id='latest'>
+  <div class="container">
+    <div class='row'>
+      <div class='col-md-12 text-center'> <!--全橫幅md12-->
+        <h1> </h1>
+</div></div></div>
+</section>
+<section id='latest'>
+  <div class="container">
+    <div class='row'>
+      <div class='col-md-12 text-center'> <!--全橫幅md12-->
+        <h1> </h1>
+</div></div></div>
+</section>
+<section id='latest'>
+  <div class="container">
+    <div class='row'>
+      <div class='col-md-12 text-center'> <!--全橫幅md12-->
+        <h1> </h1>
+</div></div></div>
+</section>
+
+<!--第五段footer-->
+<footer>
+  <div class="container">
+    <div class='row'>
+      <div class='col-md-4 text-left'>
+        <img src='pictures/logo2.png' width='120'>
+        <p>本網站價格僅供參考，實際金額依業者公告為主。</p>
+      </div>
+      <div class='col-md-4 text-left'>
+        <img src='pictures/link.png' width='120'>
+        <ul>
+          <li><a href='indexx.html'>主頁</a></li>
+          <li><a href='all.html'>最新派對</a></li>
+          <li><a href='faq.html'>常見問題</a></li>
+          <li><a href='contact.html'>聯絡我們</a></li>
+        </ul>
+      </div>
+      <div class='col-md-4 text-left'>
+        <img src='pictures/phone.png' width='120'>
+        <p>830高雄市鳳山區光遠路181號<br>
+          phone:(07)123-4567<br>
+          E-mail:<a href='#'>Sharon@gmail.com</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
